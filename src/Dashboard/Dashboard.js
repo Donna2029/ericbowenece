@@ -22,8 +22,8 @@ const Dashboard=()=>{
         const fetchData=async()=>{
             try{
                 //sends a request to get all employees and the result is stored in empRes
-                const empRes=await axios.get("https://donna2029.pythonanywhere.com/api/employees/");
-                const deptRes=await axios.get("https://donna2029.pythonanywhere.com/api/departments/");
+                const empRes=await axios.get("https://donnajoseph2025.pythonanywhere.com/api/employees/");
+                const deptRes=await axios.get("https://donnajoseph2025.pythonanywhere.com/api/departments/");
 
                 //converts departments array into an object for easy lookup
                 const deptMap={};

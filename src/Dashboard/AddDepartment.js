@@ -11,7 +11,7 @@ const AddDepartment = () => {
         try {
             const token = localStorage.getItem("token"); 
             await axios.post(
-                "https://donna2029.pythonanywhere.com/api/departments/",
+                "https://donnajoseph2025.pythonanywhere.com/api/departments/",
                 {
                     DepartmentName: departmentName
                 },

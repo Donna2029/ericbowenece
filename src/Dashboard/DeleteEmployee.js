@@ -10,7 +10,7 @@ const DeleteEmployee=()=>{
     useEffect(() => {
         const fetchEmployee = async () => {
             try {
-                const response = await axios.get(`https://donna2029.pythonanywhere.com/api/employees/${id}/`);
+                const response = await axios.get(`https://donnajoseph2025.pythonanywhere.com/api/employees/${id}/`);
                 setEmployeeName(response.data.EmployeeName);
             }catch(error){
                 alert("Error fetching employee details");
@@ -23,7 +23,7 @@ const DeleteEmployee=()=>{
     const handleDelete = async () => {
         try{
             const token = localStorage.getItem("token");
-            await axios.delete(`https://donna2029.pythonanywhere.com/api/employees/${id}/`,{
+            await axios.delete(`https://donnajoseph2025.pythonanywhere.com/api/employees/${id}/`,{
                  Headers:{Authorization: `Token ${token}`},
         });
         alert("Employee deleted successfully");

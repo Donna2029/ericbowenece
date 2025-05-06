@@ -17,8 +17,8 @@ const EditEmployee=()=>{
     useEffect(()=>{
         const fetchEmployee=async()=>{
             try{
-                const empRes=await axios.get(`https://donna2029.pythonanywhere.com/api/employees/${id}/`);
-                const depRes=await axios.get("https://donna2029.pythonanywhere.com/api/departments/");
+                const empRes=await axios.get(`https://donnajoseph2025.pythonanywhere.com/api/employees/${id}/`);
+                const depRes=await axios.get("https://donnajoseph2025.pythonanywhere.com/api/departments/");
 
                 setEmployeeName(empRes.data.EmployeeName);
                 setDesignation(empRes.data.Designation);
@@ -41,7 +41,7 @@ const EditEmployee=()=>{
         try{
             const token=localStorage.getItem("token");
             await axios.put(
-                `https://donna2029.pythonanywhere.com/api/employees/${id}/`,
+                `https://donnajoseph2025.pythonanywhere.com/api/employees/${id}/`,
                 {
                     EmployeeName:employeeName,
                     Designation:designation,

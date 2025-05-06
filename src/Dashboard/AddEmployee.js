@@ -16,7 +16,7 @@ const AddEmployee=()=>{
     useEffect(()=>{
         const fetchDepartments=async()=>{
             try{
-                const response=await axios.get("https://donna2029.pythonanywhere.com/api/departments/");
+                const response=await axios.get("https://donnajoseph2025.pythonanywhere.com/api/departments/");
                 setDepartments(response.data);
 
             }catch(error){
@@ -31,7 +31,7 @@ const AddEmployee=()=>{
         try{
             const token=localStorage.getItem("token");
             await axios.post(
-                "http://localhost:8000/api/employees/",
+                "https://donnajoseph2025.pythonanywhere.com/api/employees/",
                 {
                     EmployeeName:employeeName,
                     Designation:designation,
